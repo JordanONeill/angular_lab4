@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common'; // Import CommonModule
 import { ListcomponentComponent } from './listcomponent/listcomponent.component'; // Import ListcomponentComponent
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ListcomponentComponent], // Add the component to imports
+  imports: [CommonModule, ListcomponentComponent], // Add CommonModule here
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

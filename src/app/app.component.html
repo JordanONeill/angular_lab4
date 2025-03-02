@@ -8,9 +8,7 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <div>
-  <h1>Angular Data Binding Example</h1>
-  <button (click)="incrementCount()">Press Me</button>
-  <p>The Number of times the button has been pressed is: {{ count }}</p>
+
 
   <img 
     src="https://upload.wikimedia.org/wikipedia/commons/3/34/Red_star.svg" 
@@ -19,7 +17,12 @@
     (dblclick)="toggleMessage()"
   />
 
-  <h2 *ngIf="showMessage">Look at the star</h2>
+  <br>
+
+  <button (click)="incrementCount()">Press Me</button>
+  <h2>The Number of times the button has been pressed is: {{ count }}</h2>
+
+  <h4 *ngIf="showMessage">Look at the star</h4>
   <app-listcomponent></app-listcomponent>
 
 </div>
