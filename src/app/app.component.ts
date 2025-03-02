@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
+import { ListcomponentComponent } from './listcomponent/listcomponent.component'; // Import ListcomponentComponent
 
 @Component({
   selector: 'app-root',
+  standalone: true,
+  imports: [ListcomponentComponent], // Add the component to imports
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
